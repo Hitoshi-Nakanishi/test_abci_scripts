@@ -23,3 +23,5 @@ sifpython test_pytorch_gpu.py
 bash submit_job.sh gpu_connection/test_singularity_pytorch.sh
 bash submit_job.sh  gpu_connection/test_myenv_pytorch.sh
 ```
+
+if you get output file such as test_myenv_pytorch.sh.o7246117 and it contains True, your abci job was successfully validated in calculation server.
