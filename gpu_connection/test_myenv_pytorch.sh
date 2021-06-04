@@ -5,7 +5,7 @@
 #$ -cwd
 
 source /etc/profile.d/modules.sh
-module load gcc/7.4.0
-module load python/3.8/3.8.2
+module load gcc/9.3.0
+module load python/3.8/3.8.7
 source ~/myenv/bin/activate
-python test_pytorch_gpu.py
+python gpu_connection/test_pytorch_gpu.py

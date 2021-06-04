@@ -1,1 +1,1 @@
-qsub -g $abcigroup $1
+qsub -g $ID_GROUP $1

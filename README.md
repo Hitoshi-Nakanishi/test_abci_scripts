@@ -20,5 +20,6 @@ sifpython test_pytorch_gpu.py
 
 3. You can submit scripts to calculation server. For example, 
 ```
-bash run_scripts.sh gpu_connection/test_singularity_pytorch.sh
+bash submit_job.sh gpu_connection/test_singularity_pytorch.sh
+bash submit_job.sh  gpu_connection/test_myenv_pytorch.sh
 ```

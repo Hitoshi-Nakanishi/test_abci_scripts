@@ -14,4 +14,4 @@ sifpython () {
     singularity run --nv $sifimage python $1
 }
 
-sifpython test_pytorch_gpu.py
+sifpython gpu_connection/test_pytorch_gpu.py
