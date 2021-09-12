@@ -5,8 +5,12 @@
 export dokimage=$HOME/local/docker_images/hitoshi_python_dl_101_ubuntu1804_F22T17_v2.tar
 export sifimage=$HOME/local/sif_images/hitoshi_python_dl_101_ubuntu1804_F22T17_v2.sif
 
-module load singularitypro/3.5
+module load singularitypro/3.7
 singularity build $sifimage docker-archive://$dokimage
+
+e.g. 
+singularity build hitoshi_allinone.sif docker-archive://hitoshi_allinone_latest.tar
+
 ```
 
 2. you can use singularity image as like test_singularity_pytorch.sh
