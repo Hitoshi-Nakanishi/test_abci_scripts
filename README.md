@@ -13,7 +13,12 @@ singularity build hitoshi_allinone.sif docker-archive://hitoshi_allinone_latest.
 
 ```
 
-2. you can use singularity image as like test_singularity_pytorch.sh
+2. to go into singularity container 
+```
+singularity shell ~/local/sif_images/hitoshi_allinone.sif
+```
+
+3. You can use singularity image as like test_singularity_pytorch.sh
 ```
 export sifimage=$HOME/local/sif_images/hitoshi_python_dl_101_ubuntu1804_F22T17_v2.sif
 sifpython () {
@@ -22,7 +27,7 @@ sifpython () {
 sifpython test_pytorch_gpu.py
 ```
 
-3. You can submit scripts to calculation server. For example, 
+2. You can submit scripts to calculation server. For example, 
 ```
 bash submit_job.sh gpu_connection/test_singularity_pytorch.sh
 bash submit_job.sh  gpu_connection/test_myenv_pytorch.sh
